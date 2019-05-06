@@ -6,18 +6,19 @@ class Player
         @score = 0
     end
 
-    def score_increase
-        @score += 50    
+    def score_increase(points=50)
+        @score += points    
     end    
 end   
 
 class Question
-    attr_reader :q_array
+    attr_reader :q_array, :power_ups
 
     def initialize
         @q_array = get_questions(q_array)
+        @power_ups = power_up(power_ups) 
     end
-
+    
     private
         def get_questions(q_array)
             q_array = []
@@ -29,6 +30,9 @@ class Question
                 end       
             end 
             q_array
-        end    
-       
+        end 
+        
+        def power_up(power_ups)
+            power_ups = ["David Heinemeier Hansson", "Yukihiro Matsumoto"]
+        end
 end    

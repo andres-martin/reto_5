@@ -1,5 +1,8 @@
--Como se llama el creador de el lenguaje de programacion Ruby?;Yukihiro Matsumoto
+-Como se llama el creador del lenguaje de programacion Ruby?;Yukihiro Matsumoto
 -Cual es el nombre del creador del framework Ruby on Rails?;David Heinemeier Hansson
 -Que comando se usa para listar todos los archivos incluido ocultos en el directorio actual?;ls -a
 -Creador del lenguaje de programacion C?;Dennis Ritchie
--Framework para desarrollo front end creado por Facebook?;React
+-Libreria de JS para desarrollo Front-End creado por Facebook?;React
+-Framework de JS para desarrollo Front-End creado por Google?;Angular
+-Base de datos no relacional NoSQL mas popular?;MongoDB
+-Nombre del primer satelite en orbita?;Spuknit

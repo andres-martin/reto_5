@@ -3,6 +3,7 @@
 =end
 require_relative "question"
 
+
 puts "Enter your name:"
 print "> "
 name = gets.chomp
@@ -26,15 +27,15 @@ if input == 'yes' or input == 'y'
     puts
     puts 'Preguntas:'
     puts
-
+    
     questions.shuffle!
-    questions.each_with_index do |question, index|
+    questions[0..4].each_with_index do |question, index|
         puts "Pregunta #{index + 1}"
         puts
-
+        max_question = 0
         try = 2
         flag = 0
-            while flag == 0 and try >= 0
+            while (flag == 0 and try >= 0)
                 puts "#{question[:question]}"
                 answer = question[:answer]
                 puts "Enter your answer:"
@@ -43,21 +44,27 @@ if input == 'yes' or input == 'y'
                 puts
                 if prompt == 'exit'
                     flag = 2
-                elsif prompt == answer
+                elsif prompt == answer || prompt.downcase == answer.downcase
                     puts "Way to go!"
                     puts
-                    player.score_increase 
+                    if answer.match? Regexp.union(qs.power_ups)
+                        player.score_increase(80)
+                    else
+                        player.score_increase
+                    end        
                     flag = 1
                 else
                     if try == 0
-                        puts "What a shame :'("
+                        puts "What a shame :("
                         puts
-                    else    
-                        puts "You have #{try} tries left!"
+                    else 
+                        puts "Wrong!, try again"
+                        puts "You have #{try} tries left.." if try > 1
+                        puts "You have #{try} try left.." if try == 1
                         puts
                     end
                     try -= 1
-                end   
+                end  
             end
             if flag == 2
                 puts "Thanks!"
