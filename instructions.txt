@@ -10,6 +10,7 @@
 | '--------------' | '--------------' | '--------------' | '--------------' | | '--------------' |
  '----------------' '----------------' '----------------' '----------------'   '----------------' 
  
+Instructions:
 
 - Learn while playing, you will be prompted to answer 5 questions.
 - For each question you have three attempts to answer it.

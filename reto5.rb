@@ -14,7 +14,6 @@ player = Player.new(name)
 
 puts "Welcome #{player.name} to Reto 5!"
 puts
-puts "Instructions:"
 puts
 txt = File.open("instructions.txt")
 puts txt.read()
@@ -32,8 +31,8 @@ if input == 'yes' or input == 'y'
     questions[0..4].each_with_index do |question, index|
         puts "Pregunta #{index + 1}"
         puts
-        max_question = 0
-        try = 2
+        
+	try = 2
         flag = 0
             while (flag == 0 and try >= 0)
                 puts "#{question[:question]}"
