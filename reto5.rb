@@ -21,7 +21,7 @@ puts txt.read()
 puts
 print "Type 'yes' to start playing: "
 
-input = gets.chomp
+input = gets.chomp.downcase
 
 if input == 'yes' or input == 'y'
     puts
@@ -40,14 +40,14 @@ if input == 'yes' or input == 'y'
                 answer = question[:answer]
                 puts "Enter your answer:"
                 print "> "
-                prompt = gets.chomp
+                prompt = gets.chomp.downcase #normalize prompt to match upper and lower sequence of characters
                 puts
                 if prompt == 'exit'
                     flag = 2
-                elsif prompt == answer || prompt.downcase == answer.downcase
+                elsif prompt == answer.downcase ## normalize answer
                     puts "Way to go!"
                     puts
-                    if answer.match? Regexp.union(qs.power_ups)
+                    if answer.match Regexp.union(qs.power_ups)
                         player.score_increase(80)
                     else
                         player.score_increase
