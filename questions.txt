@@ -6,3 +6,12 @@
 -Framework de JS para desarrollo Front-End creado por Google?;Angular
 -Base de datos no relacional NoSQL mas popular?;MongoDB
 -Nombre del primer satelite en orbita?;Spuknit
+-Who created the Python programming language?;Guido Van Rossum
+-Who wrote Emacs?;Richard Stallman
+-Who create Facebook?;Mark Zuckerberg
+-Who wrote vim?;Bill Joy
+-Which fruit is associated with Steve Jobs?;Apple
+-Author of Relativity Theory?;Einstein
+-Author of "The three laws of Robotics"?;Isaac Asimov
+-Who is the inventor of Alternating Current?;Nikola Tesla
+-Who is the founder of Tesla Automotors?;Elon Musk
